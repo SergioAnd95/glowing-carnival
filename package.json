@@ -1,0 +1,26 @@
+{
+  "name": "glowing-carnival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioAnd95/glowing-carnival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioAnd95/glowing-carnival/issues"
+  },
+  "homepage": "https://github.com/SergioAnd95/glowing-carnival#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.5.5"
+  }
+}
