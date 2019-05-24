@@ -7,9 +7,9 @@ const config = require("../config");
 
 
 const UsersSchema = new mongoose.Schema({
-    username: String,
+    username: {type: String, unique: true},
     password: String,
-    email: String,
+    email: {type: String, unique: true},
     avatar: {
         type: String,
         get: v => `${v}`,
@@ -17,11 +17,11 @@ const UsersSchema = new mongoose.Schema({
     }
 })
 
-UsersSchema.methods.setPassword = (password) => {
+UsersSchema.methods.setPassword = function (password) {
     this.password = passwordHash.generate(password, {algorithm:"sha256", saltLength: 16})
 }
 
-UsersSchema.methods.verifyPassword = (password) => {
+UsersSchema.methods.verifyPassword = function (password) {
     return passwordHash.verify(password, this.password);
 }
 
