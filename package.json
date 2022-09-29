@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/SergioAnd95/glowing-carnival#readme",
   "dependencies": {
-    "@hapi/joi": "^15.0.3",
+    "@hapi/joi": "^15.1.1",
     "dotenv": "^8.0.0",
     "joi": "^14.3.1",
     "koa": "^2.7.0",
